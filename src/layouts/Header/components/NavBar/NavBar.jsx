@@ -33,9 +33,11 @@ const menuOptions = [
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
+
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
   const handleDrawerOpen = () => {
     setOpen(true);
   };
