@@ -9,19 +9,19 @@ const Site = () => {
   const { loading } = true;
   return (
     <Grid container spacing={1}>
-      <Grid item lg={12} xs={12} md={12} sx={{ mb: 8 }}>
+      <Grid item xs={12}>
         {loading ? <Skeleton /> : <Header />}
       </Grid>
-      <Grid item xs={12} lg={12} md={8}>
+      <Grid item xs={12}>
         {loading ? <Skeleton /> : <OffersCarousel />}
       </Grid>
-      <Grid item xs={4} lg={4}>
+      <Grid item xs={4}>
         {loading ? <Skeleton /> : <Item>xs=4 lg=4</Item>}
       </Grid>
-      <Grid item xs={8} lg={8}>
+      <Grid item xs={8}>
         {loading ? <Skeleton /> : <Item>xs=8 lg=8</Item>}
       </Grid>
-      <Grid item xs={12} md={12} lg={12}>
+      <Grid item xs={12}>
         {loading ? <Skeleton /> : <Item>lg=12</Item>}
       </Grid>
     </Grid>
